@@ -1,0 +1,364 @@
+
+
+/* Styling for the head component */
+#head{
+  
+  background-color: #0E0B16;
+
+  height: 100px;
+  padding-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+  
+  border-radius: 10px;
+  border-color: black;
+  border-style: groove;
+  text-align: center;
+
+  color: white;
+  font-family : Arial, sans-serif;
+  font-style: italic;
+  font-size: 75px;
+
+}
+
+body{
+  background-image: url('Images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+
+/* Styling for the container that is carrying the input form */
+.formOutercontainer{
+  width : 90%;
+
+  margin-left : 5%;
+
+  border-radius : 10px;
+  border-color : black;
+  border-style : solid;
+
+}
+
+/* setting background color for in-form containers*/
+#FormContainer1, #FormContainer3,#FormContainer5 {
+
+  background-color : gray;
+
+}
+
+#FormContainer2, #FormContainer4 {
+
+  background-color : gray;
+
+}
+
+
+
+/* Styling for the side labels*/
+.sideLabel{
+
+    float: left;
+  
+    font-size : large;
+    font-weight : bold;
+  
+    margin : 0px 0;
+    margin-left : 5%;
+    margin-top : 40px;
+    color: white;
+
+  display : inline-block;
+}
+
+/* styling for from inputs */
+input {
+  width : 10cm;
+  padding : 12px 20px;
+  margin : 8px 0;
+  margin-left: 7%;
+
+  box-sizing : border-box;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  
+  font-size: medium;
+
+}
+
+/* Styling for the list that is displayed after addItem button click */
+ul.addedIngredientList{
+
+  margin-left: 5%;
+  margin-bottom: 5%;
+  
+  display: inline;
+  height: fit-content;
+
+}
+
+/* Stylings to handle any list items in the entire page span*/
+
+li.addedIngredient,li.recipe_ingredient_item{
+ 
+  padding: 12px 20px;
+
+  margin: 8px 0;
+  margin-left: 2%;
+
+  box-sizing: border-box;
+  background-color: Transparent;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  color: white;
+  border-color: black;
+  font-size: medium;
+  display:inline-table;
+  
+}
+
+
+li:hover{
+
+  /*background-color:yellow;
+  color: white;*/
+  opacity: 0.8;
+
+}
+
+/* Styling for the search recipes button*/
+#submit{
+
+  height: 2%;
+
+  margin-left: 40%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
+   background-color: Transparent;
+  color: white;
+  text-align: center;
+  border-width: initial;
+}
+#submit:hover{
+  opacity: 0.8;
+}
+
+/* stylings for button in general */
+button{
+
+  width: 5cm;
+  height:1cm;
+
+  font-size: medium;
+  color:white;
+
+  margin-left: 5pt;
+  margin-right: 5pt;
+  border-radius: 8px;
+  border-width: initial;
+  border-color: black;
+  background-color:Transparent ;
+  transition: transform .5s ease;
+}
+
+button:hover{
+
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    vertical-align: top;
+}
+
+
+
+/* Styling for the cusine selection part */
+select{
+
+  width: 20%;
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 5%;
+
+  box-sizing: border-box;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+ 
+  font-size: medium;
+  text-align: center;
+
+}
+
+
+/* styling for container that holds all the recipes*/
+#resultOuterContainer{
+  width: 90%;
+
+  margin-left: 5%;
+  margin-top: 30px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-color: black;
+  border-style: solid;
+  background-color: darkgrey;
+  
+}
+
+
+
+/* styling for container that holds individual recipe item*/
+#resultContainer{
+  
+  height: fit-content;
+
+  border-style:groove;
+  border-color: whitesmoke;
+  border-width: 10px;
+
+  background-color: white;
+  color: black;
+
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+
+  transition: transform .5s ease;
+
+}
+#resultContainer:hover{
+  transform: scale(1.1);
+}
+
+/* Styling for the image in the results*/
+img{
+
+  margin-top: 20px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+ 
+  width: 200px;
+  height:200px;
+  
+  border-color:cornflowerblue;
+  border-style: solid;
+
+}
+
+/* Styling for the list that holds recipe ingredients*/
+ul.result_ingredients{
+
+  display:flow-root;
+
+}
+
+/* Styling for the individial list items in recipe ingredient list*/
+li.recipe_ingredient_item{
+
+  /*background-color: #AA0000;
+  color: white;*/
+
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  border-color: black;
+  background-color: brown;
+  opacity: 0.5;
+  color: white;
+  font-size: medium;
+  border-width: initial;
+  transition: transform .5s ease;
+}
+
+li.recipe_ingredient_item:hover{
+transform: scale(1.1);
+}
+
+ul.result_cookingtime{
+
+  
+
+}
+
+ul.result_diettype{
+
+  
+
+}
+
+ul.result_reciperating{
+
+  
+
+}
+
+
+
+
+ul.result_instructions{
+
+  
+
+}
+
+ul.result_restaurants{
+
+  display:flow-root;
+
+}
+
+/* Styling for the individial list items in recipe ingredient list*/
+li.recipe_restaurant_item{
+
+  /*background-color: #AA0000;
+  color: white;*/
+
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  border-color: black;
+  background-color: brown;
+  opacity: 0.5;
+  color: white;
+  font-size: medium;
+  border-width: initial;
+  transition: transform .5s ease;
+}
+
+li.recipe_restaurant_item:hover{
+transform: scale(1.1);
+}
+
+/* Styling for the individial list items in recipe ingredient list*/
+li.translated_instruction_item{
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
